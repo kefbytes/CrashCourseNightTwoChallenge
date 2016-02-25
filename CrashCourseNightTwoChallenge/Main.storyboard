@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KoL-fr-pGN">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="5BH-xJ-TSb">
+            <objects>
+                <viewController id="KoL-fr-pGN" customClass="LoginViewController" customModule="CrashCourseNightTwoChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nRH-ZY-nUJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="PXi-5o-AMI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tEs-YF-Y10">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeb-bZ-VAq">
+                                <rect key="frame" x="222" y="158" width="157" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="NWp-PV-KhR"/>
+                                    <constraint firstAttribute="height" constant="30" id="sMf-RG-I80"/>
+                                </constraints>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginAction:" destination="KoL-fr-pGN" eventType="touchUpInside" id="AEd-3a-PhR"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QcO-Wp-pbj">
+                                <rect key="frame" x="175" y="111" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="i7v-Sx-dtH"/>
+                                    <constraint firstAttribute="height" constant="30" id="nB2-O6-AVH"/>
+                                    <constraint firstAttribute="width" constant="168" id="rMF-Cn-iLY"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="swD-8K-qvH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="rMF-Cn-iLY"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="KoL-fr-pGN" id="ez2-gC-62R"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter City to Track Weather" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8TL-RM-hpC">
+                                <rect key="frame" x="20" y="550" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="B2P-dj-fyL"/>
+                                    <constraint firstAttribute="width" constant="200" id="Lkh-14-gGX"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="e5h-ec-thH"/>
+                                    <constraint firstAttribute="width" constant="200" id="iS9-vp-OO9"/>
+                                    <constraint firstAttribute="width" constant="186" id="z1F-nQ-QPz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="e5h-ec-thH"/>
+                                        <exclude reference="iS9-vp-OO9"/>
+                                        <exclude reference="z1F-nQ-QPz"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBD-2d-4un">
+                                <rect key="frame" x="496" y="550" width="84" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gkK-5C-huA"/>
+                                    <constraint firstAttribute="width" constant="84" id="kJv-a3-IGy"/>
+                                </constraints>
+                                <state key="normal" title="Add City"/>
+                                <connections>
+                                    <action selector="addCityAction:" destination="KoL-fr-pGN" eventType="touchUpInside" id="EkM-5f-OEy"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LCv-Nc-aUM">
+                                <rect key="frame" x="175" y="67" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4Br-Bk-I2O"/>
+                                    <constraint firstAttribute="width" constant="250" id="E1W-Ha-DMO"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="SRR-Ec-zgd"/>
+                                    <constraint firstAttribute="width" constant="168" id="ffg-jb-JxX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ffg-jb-JxX"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="KoL-fr-pGN" id="E0H-cS-UkW"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZ0-YJ-U4V">
+                                <rect key="frame" x="277" y="250" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eCs-vp-y7i"/>
+                                    <constraint firstAttribute="width" constant="46" id="hf6-Qi-ib9"/>
+                                </constraints>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteAction:" destination="KoL-fr-pGN" eventType="touchUpInside" id="GDj-Hz-NmW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PXi-5o-AMI" firstAttribute="top" secondItem="dBD-2d-4un" secondAttribute="bottom" constant="20" id="0ob-qz-FXC"/>
+                            <constraint firstItem="QcO-Wp-pbj" firstAttribute="centerX" secondItem="tEs-YF-Y10" secondAttribute="centerX" id="1l9-Bf-wd1"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="8TL-RM-hpC" secondAttribute="leading" id="8es-IG-b3h"/>
+                            <constraint firstItem="yeb-bZ-VAq" firstAttribute="centerX" secondItem="tEs-YF-Y10" secondAttribute="centerX" id="BvM-8e-PJa"/>
+                            <constraint firstItem="LCv-Nc-aUM" firstAttribute="centerX" secondItem="tEs-YF-Y10" secondAttribute="centerX" id="Krg-0Z-fAD"/>
+                            <constraint firstItem="yeb-bZ-VAq" firstAttribute="top" secondItem="QcO-Wp-pbj" secondAttribute="bottom" constant="17" id="MNj-OJ-ip5"/>
+                            <constraint firstItem="PXi-5o-AMI" firstAttribute="top" secondItem="8TL-RM-hpC" secondAttribute="bottom" constant="20" id="Ob5-gJ-EkD"/>
+                            <constraint firstItem="LCv-Nc-aUM" firstAttribute="top" secondItem="nRH-ZY-nUJ" secondAttribute="bottom" constant="47" id="Y99-f5-8O9"/>
+                            <constraint firstItem="QcO-Wp-pbj" firstAttribute="top" secondItem="LCv-Nc-aUM" secondAttribute="bottom" constant="14" id="azH-eQ-Fyc"/>
+                            <constraint firstItem="kZ0-YJ-U4V" firstAttribute="centerX" secondItem="tEs-YF-Y10" secondAttribute="centerX" id="tb4-Yd-mLD"/>
+                            <constraint firstItem="kZ0-YJ-U4V" firstAttribute="top" secondItem="yeb-bZ-VAq" secondAttribute="bottom" constant="62" id="wPd-Q6-l5f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dBD-2d-4un" secondAttribute="trailing" id="xrx-fc-xWH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addCityTextField" destination="8TL-RM-hpC" id="DAj-gX-uAo"/>
+                        <outlet property="deleteButton" destination="kZ0-YJ-U4V" id="CvS-Ds-QsF"/>
+                        <outlet property="loginButton" destination="yeb-bZ-VAq" id="Jl2-om-hQz"/>
+                        <outlet property="passwordTextField" destination="QcO-Wp-pbj" id="bFb-ft-hAf"/>
+                        <outlet property="usernameTextField" destination="LCv-Nc-aUM" id="0co-3c-8lh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3s2-mP-VAJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1536" y="1123"/>
+        </scene>
+    </scenes>
+</document>
